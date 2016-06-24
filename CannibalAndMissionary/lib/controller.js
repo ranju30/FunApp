@@ -1,8 +1,10 @@
 var express = require('express');
 var Game = require('../lib/game');
+var game = new Game();
 
 var loadUser = function(req, res, next){
 	req.game = new Game();
+	req.game.startGame();
 	next();
 };
 
