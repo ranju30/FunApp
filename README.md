@@ -1,0 +1,3 @@
+# FunApp
+
+Small funny app.
