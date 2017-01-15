@@ -31,5 +31,9 @@ describe('thousandToFourNine', function() {
             var ans = thousandToFourNine.represent(9989);
             assert.equal(ans, 'nine thousand nine hundred eighty nine');
         });
+        it('should return the word for 0001', function() {
+            var ans = thousandToFourNine.represent(0001);
+            assert.equal(ans, 'one');
+        });
     });
 });

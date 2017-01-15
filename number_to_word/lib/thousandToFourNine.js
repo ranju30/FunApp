@@ -11,6 +11,7 @@ var hundredToNineNinetyNine = new HundredToNineNinetyNine();
 var ThousandToFourNine = function() {
     this.represent = function(number) {
         if (zero.isZero(number)) return '';
+        if (oneToNine.represent(Math.trunc(number / 1000)) == '') return _.trim(hundredToNineNinetyNine.represent(number % 1000));
         return _.trim(oneToNine.represent(Math.trunc(number / 1000)) + " thousand " + hundredToNineNinetyNine.represent(number % 1000));
     }
 }
