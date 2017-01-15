@@ -46,4 +46,22 @@ describe('represent', function() {
         var inWord = toWord.represent(900);
         assert.equal(inWord, 'nine hundred');
     });
+
+    it('should represent for number above 1000', function() {
+        var toWord = new ToWord();
+        var inWord = toWord.represent(9000);
+        assert.equal(inWord, 'nine thousand');
+    });
+
+    it('should represent for number above 10000', function() {
+        var toWord = new ToWord();
+        var inWord = toWord.represent(90000);
+        assert.equal(inWord, 'ninety thousand');
+    });
+
+    it('should represent for number above 100000', function() {
+        var toWord = new ToWord();
+        var inWord = toWord.represent(900000);
+        assert.equal(inWord, 'nine lakh');
+    });
 });
