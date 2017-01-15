@@ -31,5 +31,9 @@ describe('tenToNinetyNine', function() {
             var ans = tenToNinetyNine.represent(99);
             assert.equal(ans, 'ninety nine');
         });
+        it('should return one for 01', function() {
+            var ans = tenToNinetyNine.represent(01);
+            assert.equal(ans, 'one');
+        });
     });
 });

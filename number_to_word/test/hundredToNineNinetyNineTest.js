@@ -31,5 +31,13 @@ describe('hundredToNineNinetyNine', function() {
             var ans = hundredToNineNinetyNine.represent(999);
             assert.equal(ans, 'nine hundred ninety nine');
         });
+        it('should return the word for 909', function() {
+            var ans = hundredToNineNinetyNine.represent(909);
+            assert.equal(ans, 'nine hundred nine');
+        });
+        it('should return one for 001', function() {
+            var ans = hundredToNineNinetyNine.represent(001);
+            assert.equal(ans, 'one');
+        });
     });
 });

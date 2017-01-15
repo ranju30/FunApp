@@ -18,7 +18,7 @@ describe('zero', function() {
         it('should return zero', function() {
             var zero = new Zero();
             var ans = zero.represent();
-            assert.equal(ans,'zero');
+            assert.equal(ans, 'zero');
         });
     });
 

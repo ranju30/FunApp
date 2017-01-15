@@ -7,6 +7,10 @@ describe('oneToNine', function() {
         beforeEach(function() {
             oneToNine = new OneToNine();
         });
+        it('should return empty for 0', function() {
+            var ans = oneToNine.represent(0);
+            assert.equal(ans, '');
+        });
         it('should return the word for 1', function() {
             var ans = oneToNine.represent(1);
             assert.equal(ans, 'one');
