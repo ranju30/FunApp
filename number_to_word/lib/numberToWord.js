@@ -19,7 +19,7 @@ var representer = [, oneToNine, tenToNinetyNine, hundredToNineNinetyNine, thousa
 var ToWord = function() {
     this.represent = function(number) {
         if (zero.isZero(number)) return zero.represent();
-        length = number.toString().length;
+        var length = number.toString().length;
         return representer[length].represent(number);
     }
 }
