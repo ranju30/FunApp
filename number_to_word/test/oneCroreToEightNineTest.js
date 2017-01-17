@@ -21,7 +21,7 @@ describe('oneCroreToEightNine', function() {
         });
         it('should return the word for 56193247', function() {
             var ans = oneCroreToEightNine.represent(56193247);
-            assert.equal(ans, 'five crore sixty one lakh ninety three thousand two hundred fourty seven');
+            assert.equal(ans, 'five crore sixty one lakh ninety three thousand two hundred forty seven');
         });
         it('should return the word for 70183437', function() {
             var ans = oneCroreToEightNine.represent(70183437);

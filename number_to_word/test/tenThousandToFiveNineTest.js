@@ -21,7 +21,7 @@ describe('tenThousandToFiveNine', function() {
         });
         it('should return the word for 56147', function() {
             var ans = tenThousandToFiveNine.represent(56147);
-            assert.equal(ans, 'fifty six thousand one hundred fourty seven');
+            assert.equal(ans, 'fifty six thousand one hundred forty seven');
         });
         it('should return the word for 70137', function() {
             var ans = tenThousandToFiveNine.represent(70137);

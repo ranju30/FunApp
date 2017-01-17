@@ -21,7 +21,7 @@ describe('tenLakhToSevenNine', function() {
         });
         it('should return the word for 5613247', function() {
             var ans = tenLakhToSevenNine.represent(5613247);
-            assert.equal(ans, 'fifty six lakh thirteen thousand two hundred fourty seven');
+            assert.equal(ans, 'fifty six lakh thirteen thousand two hundred forty seven');
         });
         it('should return the word for 7013437', function() {
             var ans = tenLakhToSevenNine.represent(7013437);

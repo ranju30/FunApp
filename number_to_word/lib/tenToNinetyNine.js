@@ -16,13 +16,12 @@ var TenToNinetyNine = function() {
         16: 'sixteen',
         17: 'seventeen',
         18: 'eighteen',
-        19: 'nineteen',
-        20: 'twenty'
+        19: 'nineteen'
     }
     var aboveTwenty = {
         2: 'twenty',
         3: 'thirty',
-        4: 'fourty',
+        4: 'forty',
         5: 'fifty',
         6: 'sixty',
         7: 'seventy',
@@ -31,7 +30,7 @@ var TenToNinetyNine = function() {
     };
     this.represent = function(number) {
         if (zero.isZero(number)) return '';
-        if (number <= 20) return oneToNine.represent(number) || tenToTwenty[number];
+        if (number < 20) return oneToNine.represent(number) || tenToTwenty[number];
         return _.trim(aboveTwenty[Math.trunc(number / 10)] + " " + oneToNine.represent(Math.trunc(number % 10)));
     }
 }
