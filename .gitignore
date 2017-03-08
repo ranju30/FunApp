@@ -1,4 +1,6 @@
-.idea/
-number_to_word/node_modules/
-expensify
+*/output
 npm-debug.log
+.DS_Store
+.idea/
+expensify/
+*/node_modules/
